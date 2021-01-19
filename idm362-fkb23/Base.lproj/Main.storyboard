@@ -29,19 +29,30 @@ Waguan folks (option + return for space)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fqt-X5-kzV">
+                                <rect key="frame" x="20" y="263" width="335" height="32"/>
+                                <segments>
+                                    <segment title="3"/>
+                                    <segment title="6"/>
+                                    <segment title="9"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Fqt-X5-kzV" firstAttribute="top" secondItem="Avl-SL-cRI" secondAttribute="bottom" constant="8" symbolic="YES" id="FnY-IN-wg2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Avl-SL-cRI" secondAttribute="trailing" constant="20" id="M83-sD-aVU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fqt-X5-kzV" secondAttribute="trailing" constant="20" id="anH-O6-FKR"/>
                             <constraint firstItem="Avl-SL-cRI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bfa-mN-d3N"/>
+                            <constraint firstItem="Fqt-X5-kzV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g6M-An-uez"/>
                             <constraint firstItem="Avl-SL-cRI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="mTz-R7-gBF"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
         </scene>
     </scenes>
     <resources>
