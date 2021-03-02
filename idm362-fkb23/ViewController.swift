@@ -39,9 +39,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func playStopbcks(_ sender: Any) {
-        print("playStopbcks")
         if (myAudioPlayerObj.isPlaying) {
             myAudioPlayerObj.stop()
+        } else {
+            myAudioPlayerObj.play()
         }
     }
     
@@ -65,10 +66,10 @@ class ViewController: UIViewController {
         
         self.present(myAlertObj, animated: true)
         
-        print("playStopbcks")
-        if (myAudioPlayerObj.isPlaying==false) {
-            myAudioPlayerObj.play()
-        }
+//        print("playStopbcks")
+//        if (myAudioPlayerObj.isPlaying==false) {
+//            myAudioPlayerObj.play()
+//        }
 
     }
     
