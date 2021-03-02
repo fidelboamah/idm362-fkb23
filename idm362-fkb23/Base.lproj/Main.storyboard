@@ -293,13 +293,13 @@
                                 <color key="maximumTrackTintColor" red="1" green="0.92564033879999996" blue="0.80130972950000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed and Designed by Fiddy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSZ-CH-aAe">
-                                <rect key="frame" x="100" y="746" width="214" height="14"/>
+                                <rect key="frame" x="100" y="795" width="214" height="14"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
                                 <color key="textColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.1.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za9-uO-bHo">
-                                <rect key="frame" x="97" y="717" width="216" height="21"/>
+                                <rect key="frame" x="97" y="766" width="216" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.27820428870000002" green="0.17045353369999999" blue="0.055549959879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -358,67 +358,71 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fAi-Hy-JyD">
-                                                <rect key="frame" x="35" y="93" width="345" height="271"/>
+                                                <rect key="frame" x="35" y="93" width="345" height="165"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="271" id="P1h-ow-dGk"/>
+                                                    <constraint firstAttribute="height" constant="165" id="P1h-ow-dGk"/>
                                                 </constraints>
                                                 <string key="text">Ampe is a simple energy-driven game played by school-age children. It originated from Ghana but has extended to many neighbouring countries because of its exciting nature. It is played by two or more people and requires kids to jump, clap and kick their feet. This app aims at recreating that game digitally.</string>
                                                 <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck2-Qq-aNk">
-                                                <rect key="frame" x="39" y="374" width="144" height="34"/>
+                                                <rect key="frame" x="39" y="278" width="144" height="34"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="24"/>
                                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: First person to 12 wins the game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVB-z6-eeb">
-                                                <rect key="frame" x="38" y="418" width="346" height="18.666666666666686"/>
+                                                <rect key="frame" x="38" y="322" width="346" height="18.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Same wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOa-bP-wh3">
-                                                <rect key="frame" x="39" y="456.66666666666669" width="82" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="39" y="360.66666666666669" width="93" height="24"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Same wins when both players have the same finger forward as their opponent." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QNU-fa-Syv">
-                                                <rect key="frame" x="39" y="487.66666666666663" width="341" height="58"/>
+                                                <rect key="frame" x="39" y="394.66666666666669" width="341" height="58"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="58" id="WR7-QL-6mE"/>
                                                 </constraints>
                                                 <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="samewins" translatesAutoresizingMaskIntoConstraints="NO" id="bEM-lN-LK4">
-                                                <rect key="frame" x="78" y="553.66666666666663" width="266" height="208"/>
+                                                <rect key="frame" x="78" y="460.66666666666674" width="266" height="208"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="208" id="xy7-Kv-heX"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Different" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2O-Kp-L0q">
-                                                <rect key="frame" x="39" y="801.66666666666663" width="91" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="39" y="708.66666666666663" width="73" height="24"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Different wins when both players have different fingers forward." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wih-z9-yhO">
-                                                <rect key="frame" x="39" y="832.66666666666663" width="345" height="50.333333333333371"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Different wins when both players have different fingers forward." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wih-z9-yhO" userLabel="Diff Text View">
+                                                <rect key="frame" x="39" y="742.66666666666663" width="345" height="64"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="2S3-5Z-bjZ"/>
+                                                </constraints>
                                                 <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diffwins" translatesAutoresizingMaskIntoConstraints="NO" id="4UE-lu-D2b">
-                                                <rect key="frame" x="79" y="920" width="265" height="208"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diffwins" translatesAutoresizingMaskIntoConstraints="NO" id="QXh-uC-jJC">
+                                                <rect key="frame" x="93.666666666666686" y="829.33333333333337" width="227" height="208.00000000000011"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="208" id="tG4-sy-xF2"/>
+                                                    <constraint firstAttribute="height" constant="208" id="JWG-jS-xIB"/>
+                                                    <constraint firstAttribute="width" constant="227" id="QBd-hE-LvI"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -428,7 +432,6 @@
                                             <constraint firstItem="ck2-Qq-aNk" firstAttribute="leading" secondItem="df4-tW-6Ge" secondAttribute="leading" constant="39" id="2eq-g8-FTw"/>
                                             <constraint firstItem="QNU-fa-Syv" firstAttribute="top" secondItem="SOa-bP-wh3" secondAttribute="bottom" constant="10" id="35F-0G-YOx"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hDG-za-7gr" secondAttribute="trailing" symbolic="YES" id="3Bd-MU-EJD"/>
-                                            <constraint firstAttribute="bottom" secondItem="4UE-lu-D2b" secondAttribute="bottom" constant="312" id="H5G-NL-RAR"/>
                                             <constraint firstItem="fAi-Hy-JyD" firstAttribute="top" secondItem="hDG-za-7gr" secondAttribute="bottom" constant="10" id="H5R-6r-8mH"/>
                                             <constraint firstAttribute="trailing" secondItem="fAi-Hy-JyD" secondAttribute="trailing" constant="34" id="LPz-tk-jFm"/>
                                             <constraint firstItem="sVB-z6-eeb" firstAttribute="top" secondItem="ck2-Qq-aNk" secondAttribute="bottom" constant="10" id="LyV-DV-AOH"/>
@@ -438,22 +441,21 @@
                                             <constraint firstItem="c2O-Kp-L0q" firstAttribute="leading" secondItem="df4-tW-6Ge" secondAttribute="leading" constant="39" id="QCk-NZ-8r4"/>
                                             <constraint firstItem="hDG-za-7gr" firstAttribute="leading" secondItem="df4-tW-6Ge" secondAttribute="leading" constant="39" id="Sfd-XO-e5F"/>
                                             <constraint firstItem="Wih-z9-yhO" firstAttribute="top" secondItem="c2O-Kp-L0q" secondAttribute="bottom" constant="10" id="T50-SZ-lQ3"/>
-                                            <constraint firstAttribute="trailing" secondItem="c2O-Kp-L0q" secondAttribute="trailing" constant="284" id="Uap-JL-kb6"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c2O-Kp-L0q" secondAttribute="trailing" constant="20" symbolic="YES" id="Uap-JL-kb6"/>
                                             <constraint firstAttribute="trailing" secondItem="QNU-fa-Syv" secondAttribute="trailing" constant="34" id="Vfq-CR-AGh"/>
-                                            <constraint firstItem="ck2-Qq-aNk" firstAttribute="top" secondItem="fAi-Hy-JyD" secondAttribute="bottom" constant="10" id="ZKa-ae-a8m"/>
+                                            <constraint firstItem="ck2-Qq-aNk" firstAttribute="top" secondItem="fAi-Hy-JyD" secondAttribute="bottom" constant="20" id="ZKa-ae-a8m"/>
                                             <constraint firstItem="hDG-za-7gr" firstAttribute="top" secondItem="df4-tW-6Ge" secondAttribute="top" constant="49" id="Zhj-ed-1pM"/>
                                             <constraint firstItem="SOa-bP-wh3" firstAttribute="leading" secondItem="df4-tW-6Ge" secondAttribute="leading" constant="39" id="Zzl-W7-tQO"/>
+                                            <constraint firstItem="QXh-uC-jJC" firstAttribute="top" secondItem="Wih-z9-yhO" secondAttribute="bottom" constant="22.5" id="cLM-WC-VOy"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SOa-bP-wh3" secondAttribute="trailing" constant="20" symbolic="YES" id="dmq-QG-XgT"/>
                                             <constraint firstItem="sVB-z6-eeb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="df4-tW-6Ge" secondAttribute="leading" constant="20" symbolic="YES" id="gyN-Ip-sCz"/>
-                                            <constraint firstItem="4UE-lu-D2b" firstAttribute="top" secondItem="Wih-z9-yhO" secondAttribute="bottom" constant="37" id="hpB-5R-pNN"/>
                                             <constraint firstItem="Wih-z9-yhO" firstAttribute="leading" secondItem="df4-tW-6Ge" secondAttribute="leading" constant="39" id="hxo-lW-eNb"/>
                                             <constraint firstAttribute="trailing" secondItem="sVB-z6-eeb" secondAttribute="trailing" constant="30" id="i8S-39-Y3M"/>
                                             <constraint firstItem="QNU-fa-Syv" firstAttribute="leading" secondItem="df4-tW-6Ge" secondAttribute="leading" constant="39" id="kN5-30-UEG"/>
                                             <constraint firstAttribute="height" constant="1440" id="nKc-8R-GFx"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ck2-Qq-aNk" secondAttribute="trailing" symbolic="YES" id="oMR-L2-KHq"/>
-                                            <constraint firstItem="4UE-lu-D2b" firstAttribute="centerX" secondItem="Wih-z9-yhO" secondAttribute="centerX" id="pMI-ep-EIL"/>
-                                            <constraint firstItem="bEM-lN-LK4" firstAttribute="trailing" secondItem="4UE-lu-D2b" secondAttribute="trailing" id="tRJ-nw-g7p"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ck2-Qq-aNk" secondAttribute="trailing" constant="20" symbolic="YES" id="oMR-L2-KHq"/>
                                             <constraint firstAttribute="trailing" secondItem="bEM-lN-LK4" secondAttribute="trailing" constant="70" id="uIg-bz-ptA"/>
+                                            <constraint firstItem="QXh-uC-jJC" firstAttribute="centerX" secondItem="df4-tW-6Ge" secondAttribute="centerX" id="uq0-FC-zEw"/>
                                             <constraint firstItem="bEM-lN-LK4" firstAttribute="centerX" secondItem="sVB-z6-eeb" secondAttribute="centerX" id="vQ2-ca-CIo"/>
                                             <constraint firstItem="SOa-bP-wh3" firstAttribute="top" secondItem="sVB-z6-eeb" secondAttribute="bottom" constant="20" id="xYL-Pb-leG"/>
                                             <constraint firstItem="bEM-lN-LK4" firstAttribute="leading" secondItem="df4-tW-6Ge" secondAttribute="leading" constant="78" id="xeL-FI-J80"/>
@@ -480,11 +482,11 @@
                             <constraint firstItem="7oO-tz-eBO" firstAttribute="trailing" secondItem="GoD-OC-HWD" secondAttribute="trailing" id="whi-Nd-ccM"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="How to play" selectedImage="questionmark.circle" catalog="system" id="hvT-qu-guS"/>
+                    <tabBarItem key="tabBarItem" title="How to play" image="questionmark.circle" catalog="system" selectedImage="questionmark.circle" id="hvT-qu-guS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b52-Wc-4qn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2233.8461538461538" y="-1749.5260663507108"/>
+            <point key="canvasLocation" x="2232.8000000000002" y="-1750.0749625187407"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="y6L-ex-GgE">
@@ -499,7 +501,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="cIq-9S-db3" kind="relationship" relationship="viewControllers" id="cuZ-Hj-Dak"/>
-                        <segue destination="Hd9-aw-m1h" kind="relationship" relationship="viewControllers" id="91v-2B-0bw"/>
                         <segue destination="e1f-Zv-3rL" kind="relationship" relationship="viewControllers" id="4Fm-yI-paP"/>
                     </connections>
                 </tabBarController>
