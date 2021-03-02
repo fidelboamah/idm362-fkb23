@@ -57,7 +57,11 @@ class ViewController: UIViewController {
         let myAlertObj = UIAlertController(title: "Game Paused", message: "You have paused", preferredStyle: .actionSheet)
         
         myAlertObj.addAction(UIAlertAction(title: "Resume", style: .default, handler: {(UIAlertAction) in print("User has resumed the game")
-            
+                    if (myAudioPlayerObj.isPlaying==false) {
+                        myAudioPlayerObj.play()
+                    } else {
+                        myAudioPlayerObj.play()
+                    }
         }))
         
         myAlertObj.addAction(UIAlertAction(title: "Exit", style: .destructive, handler: {(UIAlertAction) in print("User has exited the game")
