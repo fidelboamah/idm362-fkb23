@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pcx-fK-Eza">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -31,12 +31,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VGU-z0-uBu" userLabel="Samebounce">
-                                <rect key="frame" x="20" y="99.666666666666686" width="374" height="93.333333333333314"/>
+                                <rect key="frame" x="20" y="99.5" width="374" height="93.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX9-vg-XXb">
-                                        <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="93.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="93.5"/>
                                         <color key="backgroundColor" red="0.98905915020000001" green="0.3549098074" blue="0.5661632419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button 1">
+                                        <state key="normal" title="S1">
                                             <color key="titleColor" red="0.96077269320000003" green="0.96077829599999998" blue="0.96079295870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -44,11 +44,14 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="S1:" destination="cIq-9S-db3" eventType="touchUpInside" id="nfj-xe-dLZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="til-GU-p22">
-                                        <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="93.333333333333329"/>
+                                        <rect key="frame" x="189.5" y="0.0" width="184.5" height="93.5"/>
                                         <color key="backgroundColor" red="0.98905915020000001" green="0.3549098074" blue="0.5661632419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button 2">
+                                        <state key="normal" title="S2">
                                             <color key="titleColor" red="0.96077269320000003" green="0.96077829599999998" blue="0.96079295870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -56,6 +59,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="S2:" destination="cIq-9S-db3" eventType="touchUpInside" id="z0H-OE-Yc4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -64,7 +70,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Same" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBL-lY-lPe">
-                                <rect key="frame" x="183.33333333333334" y="63.999999999999993" width="47.666666666666657" height="20.666666666666664"/>
+                                <rect key="frame" x="183" y="64" width="48" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.5" id="tPa-Va-oHu"/>
                                 </constraints>
@@ -73,18 +79,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Different" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uev-rC-koY">
-                                <rect key="frame" x="171" y="770.33333333333337" width="72" height="22.666666666666629"/>
+                                <rect key="frame" x="171" y="770.5" width="72" height="22.5"/>
                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yfx-WX-Fd1" userLabel="Diffplay">
-                                <rect key="frame" x="20" y="461.99999999999994" width="374" height="192.33333333333331"/>
+                                <rect key="frame" x="20" y="462" width="374" height="192.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9I-pG-VCg">
-                                        <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="192.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="192.5"/>
                                         <color key="backgroundColor" red="1" green="0.52360343929999997" blue="0.33021324870000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button 1">
+                                        <state key="normal" title="D3">
                                             <color key="titleColor" red="0.96077269320000003" green="0.96077829599999998" blue="0.96079295870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -92,11 +98,14 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="D3:" destination="cIq-9S-db3" eventType="touchUpInside" id="OxV-hi-nO2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySD-hj-KcM">
-                                        <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="192.33333333333334"/>
+                                        <rect key="frame" x="189.5" y="0.0" width="184.5" height="192.5"/>
                                         <color key="backgroundColor" red="1" green="0.52360343929999997" blue="0.33021324870000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button 2">
+                                        <state key="normal" title="D4">
                                             <color key="titleColor" red="0.96077269320000003" green="0.96077829599999998" blue="0.96079295870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -104,16 +113,19 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="D4:" destination="cIq-9S-db3" eventType="touchUpInside" id="wLa-7e-UbC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nNr-uf-T8A" userLabel="Diffbounce">
-                                <rect key="frame" x="20" y="662" width="374" height="93.333333333333371"/>
+                                <rect key="frame" x="20" y="662" width="374" height="93.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2e0-l5-m5j">
-                                        <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="93.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="93.5"/>
                                         <color key="backgroundColor" red="1" green="0.52360343929999997" blue="0.33021324870000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button 3">
+                                        <state key="normal" title="D1">
                                             <color key="titleColor" red="0.96077269320000003" green="0.96077829599999998" blue="0.96079295870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -121,11 +133,14 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="D1:" destination="cIq-9S-db3" eventType="touchUpInside" id="2QH-2a-tBg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="071-C9-UtJ">
-                                        <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="93.333333333333329"/>
+                                        <rect key="frame" x="189.5" y="0.0" width="184.5" height="93.5"/>
                                         <color key="backgroundColor" red="1" green="0.52360343929999997" blue="0.33021324870000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button 4">
+                                        <state key="normal" title="D2">
                                             <color key="titleColor" red="0.96077269320000003" green="0.96077829599999998" blue="0.96079295870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -133,6 +148,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="D2:" destination="cIq-9S-db3" eventType="touchUpInside" id="wEA-tl-3RA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -193,12 +211,12 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7M7-yA-5Ew" userLabel="Sameplay">
-                                <rect key="frame" x="20" y="200.66666666666663" width="374" height="194.33333333333337"/>
+                                <rect key="frame" x="20" y="200.5" width="374" height="194.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLj-LI-fc0">
-                                        <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="194.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="194.5"/>
                                         <color key="backgroundColor" red="0.98905915020000001" green="0.3549098074" blue="0.5661632419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button 3">
+                                        <state key="normal" title="S3">
                                             <color key="titleColor" red="0.96077269320000003" green="0.96077829599999998" blue="0.96079295870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -206,11 +224,14 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="S3:" destination="cIq-9S-db3" eventType="touchUpInside" id="Saw-bw-ddP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REN-bF-CTr">
-                                        <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="194.33333333333334"/>
+                                        <rect key="frame" x="189.5" y="0.0" width="184.5" height="194.5"/>
                                         <color key="backgroundColor" red="0.98905915020000001" green="0.3549098074" blue="0.5661632419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button 4">
+                                        <state key="normal" title="S4">
                                             <color key="titleColor" red="0.96077269320000003" green="0.96077829599999998" blue="0.96079295870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -218,6 +239,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="S4:" destination="cIq-9S-db3" eventType="touchUpInside" id="pnX-4o-VP8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -352,7 +376,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1440"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDG-za-7gr">
-                                                <rect key="frame" x="39.000000000000007" y="49" width="75.666666666666686" height="34"/>
+                                                <rect key="frame" x="39" y="49" width="75.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="24"/>
                                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                                 <nil key="highlightedColor"/>
@@ -375,19 +399,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: First person to 12 wins the game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVB-z6-eeb">
-                                                <rect key="frame" x="38" y="322" width="346" height="18.666666666666686"/>
+                                                <rect key="frame" x="38" y="322" width="346" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Same wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOa-bP-wh3">
-                                                <rect key="frame" x="39" y="360.66666666666669" width="93" height="24"/>
+                                                <rect key="frame" x="39" y="360.5" width="93" height="24"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Same wins when both players have the same finger forward as their opponent." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QNU-fa-Syv">
-                                                <rect key="frame" x="39" y="394.66666666666669" width="341" height="58"/>
+                                                <rect key="frame" x="39" y="394.5" width="341" height="58"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="58" id="WR7-QL-6mE"/>
@@ -397,19 +421,19 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="samewins" translatesAutoresizingMaskIntoConstraints="NO" id="bEM-lN-LK4">
-                                                <rect key="frame" x="78" y="460.66666666666674" width="266" height="208"/>
+                                                <rect key="frame" x="78" y="460.5" width="266" height="208"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="208" id="xy7-Kv-heX"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Different" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2O-Kp-L0q">
-                                                <rect key="frame" x="39" y="708.66666666666663" width="73" height="24"/>
+                                                <rect key="frame" x="39" y="708.5" width="73" height="24"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Different wins when both players have different fingers forward." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wih-z9-yhO" userLabel="Diff Text View">
-                                                <rect key="frame" x="39" y="742.66666666666663" width="345" height="64"/>
+                                                <rect key="frame" x="39" y="742.5" width="345" height="64"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="2S3-5Z-bjZ"/>
@@ -419,7 +443,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diffwins" translatesAutoresizingMaskIntoConstraints="NO" id="QXh-uC-jJC">
-                                                <rect key="frame" x="93.666666666666686" y="829.33333333333337" width="227" height="208.00000000000011"/>
+                                                <rect key="frame" x="93.5" y="829" width="227" height="208"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="208" id="JWG-jS-xIB"/>
                                                     <constraint firstAttribute="width" constant="227" id="QBd-hE-LvI"/>
