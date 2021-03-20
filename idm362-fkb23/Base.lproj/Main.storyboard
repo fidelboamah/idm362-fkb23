@@ -275,91 +275,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="gamecontroller.fill" catalog="system" selectedImage="gamecontroller.fill" id="nOC-VB-aNp"/>
+                    <connections>
+                        <outlet property="Diffscrlabel" destination="YMJ-pg-d77" id="GTW-iZ-McJ"/>
+                        <outlet property="Samescrlabel" destination="Vv8-HR-ARX" id="cTY-zU-Bei"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yxw-RN-wdz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="877.5" y="207.04225352112675"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="hem-gZ-vhD">
-            <objects>
-                <viewController id="Hd9-aw-m1h" customClass="SettingsViewController" customModule="idm362_fkb23" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7xj-I5-QTz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nug-Bu-WRe">
-                                <rect key="frame" x="40" y="103" width="213" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <color key="textColor" systemColor="systemPurpleColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wI-PJ-fY9">
-                                <rect key="frame" x="40" y="183" width="220" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwY-tI-cyT">
-                                <rect key="frame" x="40" y="285" width="220" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ewz-4a-kNQ">
-                                <rect key="frame" x="38" y="212" width="335" height="31"/>
-                                <color key="minimumTrackTintColor" systemColor="systemPurpleColor"/>
-                                <color key="maximumTrackTintColor" red="1" green="0.92564033879999996" blue="0.80130972950000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1BT-SK-vgT">
-                                <rect key="frame" x="38" y="320" width="335" height="31"/>
-                                <color key="minimumTrackTintColor" systemColor="systemPurpleColor"/>
-                                <color key="maximumTrackTintColor" red="1" green="0.92564033879999996" blue="0.80130972950000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed and Designed by Fiddy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSZ-CH-aAe">
-                                <rect key="frame" x="100" y="795" width="214" height="14"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
-                                <color key="textColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.1.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za9-uO-bHo">
-                                <rect key="frame" x="97" y="766" width="216" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.27820428870000002" green="0.17045353369999999" blue="0.055549959879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="887-pM-WzE"/>
-                        <color key="backgroundColor" red="0.96077269320000003" green="0.96077829599999998" blue="0.96079295870000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="Za9-uO-bHo" firstAttribute="leading" secondItem="887-pM-WzE" secondAttribute="leading" constant="97" id="4Ur-8k-dGK"/>
-                            <constraint firstItem="1BT-SK-vgT" firstAttribute="top" secondItem="DwY-tI-cyT" secondAttribute="bottom" constant="14" id="5uo-ZC-VEs"/>
-                            <constraint firstItem="Nug-Bu-WRe" firstAttribute="top" secondItem="887-pM-WzE" secondAttribute="top" constant="59" id="6jp-ti-XKM"/>
-                            <constraint firstItem="887-pM-WzE" firstAttribute="trailing" secondItem="6wI-PJ-fY9" secondAttribute="trailing" constant="154" id="6rI-fD-OgA"/>
-                            <constraint firstItem="887-pM-WzE" firstAttribute="bottom" secondItem="OSZ-CH-aAe" secondAttribute="bottom" constant="53" id="9pa-ky-Oob"/>
-                            <constraint firstItem="887-pM-WzE" firstAttribute="trailing" secondItem="Za9-uO-bHo" secondAttribute="trailing" constant="101" id="Ape-xp-xql"/>
-                            <constraint firstItem="887-pM-WzE" firstAttribute="trailing" secondItem="Nug-Bu-WRe" secondAttribute="trailing" constant="161" id="BMw-QO-Fow"/>
-                            <constraint firstItem="1BT-SK-vgT" firstAttribute="leading" secondItem="887-pM-WzE" secondAttribute="leading" constant="40" id="BvV-7T-m4V"/>
-                            <constraint firstItem="887-pM-WzE" firstAttribute="trailing" secondItem="DwY-tI-cyT" secondAttribute="trailing" constant="154" id="Hmp-bh-bnb"/>
-                            <constraint firstItem="887-pM-WzE" firstAttribute="trailing" secondItem="OSZ-CH-aAe" secondAttribute="trailing" constant="100" id="KZk-1f-J0d"/>
-                            <constraint firstItem="6wI-PJ-fY9" firstAttribute="leading" secondItem="887-pM-WzE" secondAttribute="leading" constant="40" id="X8h-va-QvE"/>
-                            <constraint firstItem="OSZ-CH-aAe" firstAttribute="leading" secondItem="887-pM-WzE" secondAttribute="leading" constant="100" id="YN5-1L-PcN"/>
-                            <constraint firstItem="DwY-tI-cyT" firstAttribute="leading" secondItem="887-pM-WzE" secondAttribute="leading" constant="40" id="cMw-lg-Tyz"/>
-                            <constraint firstItem="Ewz-4a-kNQ" firstAttribute="top" secondItem="6wI-PJ-fY9" secondAttribute="bottom" constant="8" id="dac-yy-uKL"/>
-                            <constraint firstItem="6wI-PJ-fY9" firstAttribute="top" secondItem="Nug-Bu-WRe" secondAttribute="bottom" constant="44" id="fNJ-me-8PL"/>
-                            <constraint firstItem="Nug-Bu-WRe" firstAttribute="leading" secondItem="887-pM-WzE" secondAttribute="leading" constant="40" id="fgJ-Tz-r8X"/>
-                            <constraint firstItem="OSZ-CH-aAe" firstAttribute="top" secondItem="Za9-uO-bHo" secondAttribute="bottom" constant="8" symbolic="YES" id="k5e-A7-MW7"/>
-                            <constraint firstItem="Ewz-4a-kNQ" firstAttribute="leading" secondItem="887-pM-WzE" secondAttribute="leading" constant="40" id="sAw-Ll-eHT"/>
-                            <constraint firstItem="887-pM-WzE" firstAttribute="trailing" secondItem="Ewz-4a-kNQ" secondAttribute="trailing" constant="43" id="snY-yQ-kdQ"/>
-                            <constraint firstItem="DwY-tI-cyT" firstAttribute="top" secondItem="Ewz-4a-kNQ" secondAttribute="bottom" constant="43" id="xgx-Iv-ZLh"/>
-                            <constraint firstItem="887-pM-WzE" firstAttribute="trailing" secondItem="1BT-SK-vgT" secondAttribute="trailing" constant="43" id="yiJ-MK-WDp"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" selectedImage="gearshape.fill" id="z6E-S0-Z0A"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UEA-2o-CNa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2186" y="-253"/>
         </scene>
         <!--How to play-->
         <scene sceneID="btq-DT-KYc">
@@ -398,20 +321,20 @@
                                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note: First person to 12 wins the game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVB-z6-eeb">
-                                                <rect key="frame" x="38" y="322" width="346" height="18.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There's no limit, play as long as you wish!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVB-z6-eeb">
+                                                <rect key="frame" x="38" y="322" width="346" height="19"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Same wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOa-bP-wh3">
-                                                <rect key="frame" x="39" y="360.5" width="93" height="24"/>
+                                                <rect key="frame" x="39" y="361" width="93" height="24"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Same wins when both players have the same finger forward as their opponent." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QNU-fa-Syv">
-                                                <rect key="frame" x="39" y="394.5" width="341" height="58"/>
+                                                <rect key="frame" x="39" y="395" width="341" height="58"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="58" id="WR7-QL-6mE"/>
@@ -421,19 +344,19 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="samewins" translatesAutoresizingMaskIntoConstraints="NO" id="bEM-lN-LK4">
-                                                <rect key="frame" x="78" y="460.5" width="266" height="208"/>
+                                                <rect key="frame" x="78" y="461" width="266" height="208"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="208" id="xy7-Kv-heX"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Different" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2O-Kp-L0q">
-                                                <rect key="frame" x="39" y="708.5" width="73" height="24"/>
+                                                <rect key="frame" x="39" y="709" width="73" height="24"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Different wins when both players have different fingers forward." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wih-z9-yhO" userLabel="Diff Text View">
-                                                <rect key="frame" x="39" y="742.5" width="345" height="64"/>
+                                                <rect key="frame" x="39" y="743" width="345" height="64"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="2S3-5Z-bjZ"/>
@@ -443,7 +366,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diffwins" translatesAutoresizingMaskIntoConstraints="NO" id="QXh-uC-jJC">
-                                                <rect key="frame" x="93.5" y="829" width="227" height="208"/>
+                                                <rect key="frame" x="93.5" y="829.5" width="227" height="208"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="208" id="JWG-jS-xIB"/>
                                                     <constraint firstAttribute="width" constant="227" id="QBd-hE-LvI"/>
@@ -536,7 +459,6 @@
     <resources>
         <image name="diffwins" width="808" height="694"/>
         <image name="gamecontroller.fill" catalog="system" width="128" height="80"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="pause.fill" catalog="system" width="116" height="128"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="samewins" width="816" height="706"/>

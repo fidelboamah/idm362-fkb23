@@ -35,7 +35,10 @@ class ViewController: UIViewController {
         }
         
     } // viewDidLoad
-    
+    @IBOutlet weak var Diffscrlabel: UILabel!
+    @IBOutlet weak var Samescrlabel: UILabel!
+    var samescore = 0
+    var diffscore = 0
     
     
     @IBAction func playStopbcks(_ sender: Any) {
@@ -64,7 +67,17 @@ class ViewController: UIViewController {
                     }
         }))
         
-        myAlertObj.addAction(UIAlertAction(title: "Exit", style: .destructive, handler: {(UIAlertAction) in print("User has exited the game")
+        myAlertObj.addAction(UIAlertAction(title: "Restart", style: .destructive, handler: { [self](UIAlertAction) in print("User has exited the game")
+            if (myAudioPlayerObj.isPlaying==false) {
+                myAudioPlayerObj.play()
+            } else {
+                myAudioPlayerObj.play()
+            }
+            
+            samescore = 0
+            diffscore = 0
+            Diffscrlabel.text = "0"
+            Samescrlabel.text = "0"
             
         }))
         
@@ -77,17 +90,19 @@ class ViewController: UIViewController {
 
     }
     
+    var timer = Timer()
     var D3 = false
     var D4 = false
     var S3 = false
     var S4 = false
-    var samescore = 0
-    var diffscore = 0
+//    var samescore = 0
+//    var diffscore = 0
     
     // Different buttons
     @IBAction func D1(_ sender: Any) {
         print("D1 pressed")
-        
+        // start the timer
+        timer = Timer.scheduledTimer(timeInterval: 0.25, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
     }
     
     
@@ -125,25 +140,30 @@ class ViewController: UIViewController {
         print("S4 pressed, its value is \(S4)")
     }
     
-    func winner() {
+    // Checking btn clicks
+    func btnChecker() {
         if (D3 == true && S3 == true) {
             print("same wins")
             samescore = samescore + 1
+            Samescrlabel.text = "\(samescore)"
         }
         
         else if (D4 == true && S4 == true) {
             print ("same wins")
             samescore = samescore + 1
+            Samescrlabel.text = "\(samescore)"
         }
         
         else if (D3 == true && S4 == true) {
             print ("different wins")
             diffscore = diffscore + 1
+            Diffscrlabel.text = "\(diffscore)"
         }
         
         else if (D4 == true && S3 == true) {
             print ("Different wins")
             diffscore = diffscore + 1
+            Diffscrlabel.text = "\(diffscore)"
         }
         
         D3 = false
@@ -152,6 +172,53 @@ class ViewController: UIViewController {
         S4 = false
         
     }
+    
+//    func reset () {
+//        samescore = 0
+//        diffscore = 0
+//        Diffscrlabel.text = "0"
+//        Samescrlabel.text = "0"
+//    }
+    
+    func whowon() {
+        
+        if (samescore > 12) {
+            print ("Working now")
+            
+            let myAlertObj = UIAlertController(title: "Same wins", message: "Sorry different!", preferredStyle: .actionSheet)
+            
+            myAlertObj.addAction(UIAlertAction(title: "Thank you", style: .default, handler: {(UIAlertAction) in print("User has resumed the game")
+
+            }))
+        
+        }
+    
+    else if (diffscore > 12) {
+    
+    let myAlertObj = UIAlertController(title: "Different wins", message: "Sorry same!", preferredStyle: .actionSheet)
+    
+    myAlertObj.addAction(UIAlertAction(title: "Thank you", style: .default, handler: {(UIAlertAction) in print("User has resumed the game")
+
+    }))
+    }
+        
+    }
+
+@objc func timerAction() {
+    btnChecker()
+    whowon()
+//    print("zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz")
+    print("\(samescore)")
+    print("\(diffscore)")
+}
+    
+//    func winner() {
+//        btnChecker()
+//    }
+
+    
+    
+    
     
     
     
